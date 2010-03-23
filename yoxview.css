@@ -1,0 +1,150 @@
+﻿#yoxview .yoxview_bottom{ bottom: 0; }
+#yoxview .yoxview_top{ top: 0; }
+#yoxview .yoxview_right{ float: right; }
+#yoxview .yoxview_left{ float: left; }
+
+#yoxview
+{
+	position: absolute;
+	z-index: 999;
+	border: solid 1px #999;
+
+	overflow: hidden;
+	font-size: 10pt;
+}
+#yoxview a img{ border: none; }
+#yoxview a:focus{ outline: none; }
+#yoxview img.yoxview_fadeImg{ position: absolute; top: 0; left: 0;}
+#yoxview .yoxview_ctlBtn
+{
+	position: absolute; 
+	z-index: 3;
+	display: block;
+	text-decoration: none;
+	outline: none;
+	width: 50%;
+	height: 100%;
+}
+#yoxview .yoxview_ctlBtn img
+{
+	position: absolute;
+	border: none;
+	top: 50%;
+	margin-top: -22px;
+}
+#yoxview a.yoxview_ctlBtn:focus, #yoxview a.yoxview_ctlBtn:active{ outline: none; outline: none;}
+#yoxview .yoxview_notification
+{
+	width: 59px; 
+	height: 59px; 
+	position: absolute; 
+	top: 50%; 
+	left: 50%; 
+	margin-top: -30px;
+	margin-left: -30px;
+	z-index: 4;
+}
+
+#yoxview #yoxview_ajaxLoader img
+{
+	background: url(images/popup_loader_back.png) no-repeat center center;
+	padding: 13px;
+}
+#yoxview .yoxview_popupBarPanel
+{
+	position: absolute;
+	z-index: 4;
+	height: 70px;
+	width: 100%;
+	display: none;
+}
+#yoxview .yoxview_popupBarPanel .yoxview_popupBar
+{
+	position: absolute;
+	right: 0;
+	line-height: 1em;	
+}
+#yoxview #yoxview_popupMenu
+{ 
+	width: 150px; 
+	height: 42px; 
+	padding-top: 0px;
+	padding-right: 9px;
+	position: absolute; 
+	right: 0;
+	background-image: url(images/menu_back.png); 
+	background-repeat: no-repeat;
+}
+
+#yoxview #yoxview_popupMenu a
+{ 
+	display: block; 
+	width: 45px; 
+	float: right; 
+	text-align: center; 
+	font-size: 0.8em; 
+	position: relative;
+	margin-top: -5px;
+	padding-bottom: 13px;
+	text-decoration: none;
+	font-family: Arial, Sans-Serif;
+}
+#yoxview #yoxview_popupMenu a span{ color: White; display: block; margin-bottom: 3px;  }
+#yoxview #yoxview_popupMenu a.last{ margin-left: 0; }
+#yoxview #yoxview_popupMenu a:focus{ outline: none; }
+#yoxview #yoxview_popupInfo div
+{
+	z-index: 1;
+	width: 100%;
+}
+#yoxview #yoxview_popupInfo a{ color: #aaa; text-decoration: underline; outline: none; }
+#yoxview #yoxview_popupInfo a:hover{ color: White; text-decoration: underline; }
+#yoxview #yoxview_popupInfo h1
+{
+	z-index: 2;
+	font-size: 12pt;
+	color: White;
+	font-family: Arial, Sans-Serif;
+	font-weight: normal;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+#yoxview #yoxview_popupInfo span
+{
+	position: absolute;
+	bottom: 7px;
+	left: 10px;
+	z-index: 3;
+	font-size: 0.8em;
+	color: White;
+}
+#yoxview #yoxview_helpPanel
+{
+	display: none;
+	width: 201px;
+	height: 312px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -171px;
+	margin-left: -111px;
+	z-index: 5;
+	color: White;
+	padding: 20px;
+	padding-top: 10px;
+	cursor: pointer;
+}
+#yoxview #yoxview_helpPanel h1{ font-family: Arial Black, Arial, Sans-Serif; font-size: 1em; }
+#yoxview #yoxview_helpPanel p{ margin-top: 80px; }
+#yoxview #yoxview_helpPanel span#yoxview_closeHelp{ display: block; position: absolute; bottom: 20px; left: 0; text-align: center; width: 100%; }
+
+ul.yoxview-thumbnails
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul.yoxview-thumbnails li{ display: inline; }
+.yoxview-thumbnails-details{ margin-bottom: 1em; }
+.yoxview-thumbnails-details h2{ margin-bottom: 0; padding: 0; font-size: 1.2em; font-weight: bold;}
